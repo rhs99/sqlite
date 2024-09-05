@@ -76,7 +76,9 @@ public:
     {
         for (auto row : master_table_rows)
         {
-            cout << row.name << " ";
+            if (row.type == "table"){
+                cout << row.name << " ";
+            }
         }
         cout << endl;
     }
